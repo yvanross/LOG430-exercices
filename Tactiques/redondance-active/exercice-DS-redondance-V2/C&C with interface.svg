@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="761px" preserveAspectRatio="none" style="width:450px;height:761px;background:#FFFFFF;" version="1.1" viewBox="0 0 450 761" width="450px" zoomAndPan="magnify"><defs/><g><!--MD5=[40046ef14a1cf630dc5fb444525ef4ac]
+entity AppClient--><g id="elem_AppClient"><ellipse cx="89" cy="239.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M89,247.5 L89,274.5 M76,255.5 L102,255.5 M89,274.5 L76,289.5 M89,274.5 L102,289.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="52.5" y="303.9951">AppClient</text></g><!--MD5=[16fab723be418f7eaf2ea4bd895a8e51]
+entity C--><g id="elem_C"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="130" x="149" y="7"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="259" y="12"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="257" y="14"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="257" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="164" y="39.9951">Capteur 1..3</text></g><!--MD5=[36e7cd95dd69b8fc9c44ee72248e17a6]
+entity O--><g id="elem_O"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="219.5" y="709"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="340.5" y="714"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="338.5" y="716"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="338.5" y="720"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="234.5" y="741.9951">Orchestrateur</text></g><!--MD5=[8b7ff00887dec072f718dbb0b878e3a4]
+entity IOC--><g id="elem_IOC"><ellipse cx="203" cy="620" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="137" y="649.9951">IOrchestrateurCtrl</text></g><!--MD5=[9c35c66068622dad62ecac52c54c307b]
+entity V--><g id="elem_V"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="75" x="176.5" y="246"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="231.5" y="251"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="229.5" y="253"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="229.5" y="257"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="191.5" y="278.9951">Vote</text></g><!--MD5=[c2ca0dec4dd704caadc4eca7f9891f92]
+entity IV--><g id="elem_IV"><ellipse cx="214" cy="142" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="170" y="171.9951">ISommateur</text></g><!--MD5=[0129022b4f4fff0a0708d54da28a13f3]
+entity IDWS--><g id="elem_IDWS"><ellipse cx="89" cy="396" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="30" y="425.9951">IDataWebServer</text></g><!--MD5=[4af459200d26843669e7d9898b0dca8a]
+entity DWS--><g id="elem_DWS"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="154" x="7" y="485"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="141" y="490"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="139" y="492"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="139" y="496"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="22" y="517.9951">DataWebServer</text></g><!--MD5=[e91d325b6c6799f45ce2945c46a99c1c]
+entity IS--><g id="elem_IS"><ellipse cx="332" cy="396" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="288" y="425.9951">ISommateur</text></g><!--MD5=[8ad42e69c823d91e931492f14bc2a1bb]
+entity S--><g id="elem_S"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="156" x="288" y="485"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="424" y="490"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="422" y="492"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="422" y="496"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="303" y="517.9951">Sommateur 1..3</text></g><!--MD5=[05f5779cd7898a6a452c38abd2363a64]
+entity ISC--><g id="elem_ISC"><ellipse cx="377" cy="620" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="319.5" y="649.9951">ISommateurCtrl</text></g><!--MD5=[e0e1c8beed7dc29055be599babb45027]
+link C to IV--><g id="link_C_IV"><path d="M214,53.26 C214,75.562 214,109.156 214,127.635 " fill="none" id="C-to-IV" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="214,132.856,218,123.856,214,127.856,210,123.856,214,132.856" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7f2e4632f0d3d5044cd16c133ae76614]
+link IV to V--><g id="link_IV_V"><path d="M214,151.202 C214,170.103 214,217.268 214,245.544 " fill="none" id="IV-V" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[1643ecab35bdeabefcf7d5bcf03b65d0]
+link V to IS--><g id="link_V_IS"><path d="M234.824,292.06 C259.884,318.606 301.045,362.208 320.772,383.106 " fill="none" id="V-to-IS" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="324.421,386.971,321.1506,377.681,320.9883,383.3355,315.3338,383.1732,324.421,386.971" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2d7fce9a81b2f4af7350e7961f0b79c7]
+link IS to S--><g id="link_IS_S"><path d="M334.556,405.268 C339.371,420.848 349.984,455.184 357.547,479.652 " fill="none" id="IS-to-S" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="359.111,484.713,360.2738,474.933,357.6339,479.9361,352.6308,477.2963,359.111,484.713" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[42228eb3d8303db69ed110463698c459]
+link V to IDWS--><g id="link_V_IDWS"><path d="M191.94,292.06 C165.284,318.716 121.428,362.572 100.6339,383.366 " fill="none" id="V-to-IDWS" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="97.0289,386.971,106.2214,383.4357,100.5645,383.4355,100.5646,377.7787,97.0289,386.971" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b02fed2a036f93cf0cfc46613b27d9ab]
+link IDWS to DWS--><g id="link_IDWS_DWS"><path d="M88.6242,405.268 C87.8656,421.956 86.1289,460.164 85.013,484.713 " fill="none" id="IDWS-DWS" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[1cece09a8886608a9c6ffba476cb036a]
+link AppClient to IDWS--><g id="link_AppClient_IDWS"><path d="M89,307.166 C89,332.253 89,363.895 89,381.537 " fill="none" id="AppClient-to-IDWS" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="89,386.953,93,377.953,89,381.953,85,377.953,89,386.953" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[119d4f99003ba0901f0cb913a4d4aba0]
+link S to ISC--><g id="link_S_ISC"><path d="M368.226,531.26 C370.687,555.869 374.523,594.227 376.186,610.856 " fill="none" id="S-ISC" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5c1d28cf5b2f05dbfb77ed40a4d33ef0]
+reverse link ISC to O--><g id="link_ISC_O"><path d="M367.069,633.556 C352.606,651.843 325.526,686.0816 307.627,708.7129 " fill="none" id="ISC-backto-O" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="370.461,629.268,361.7407,633.8458,367.3594,633.1897,368.0154,638.8084,370.461,629.268" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[56e995f8810e77d588e967110fe387c5]
+link V to IOC--><g id="link_V_IOC"><path d="M213.304,292.096 C211.221,358.165 205.084,552.889 203.42,605.673 " fill="none" id="V-to-IOC" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="203.256,610.864,207.5394,601.9954,203.4146,605.8665,199.5435,601.7417,203.256,610.864" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6c097fd63671ef094ce3df6f8391ed61]
+link IOC to O--><g id="link_IOC_O"><path d="M209.539,629.268 C222.738,645.956 252.957,684.1637 272.373,708.7129 " fill="none" id="IOC-O" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[735df8ecfb56bfdc34bb31dd46e2fc54]
+@startuml
+Actor AppClient
+
+[Capteur 1..3] as C
+[Orchestrateur] as O
+() "IOrchestrateurCtrl" as IOC
+[Vote] as V
+() ISommateur as IV
+() "IDataWebServer" as IDWS
+[DataWebServer] as DWS
+
+() "ISommateur" as IS
+[Sommateur 1..3] as S
+() "ISommateurCtrl" as ISC
+
+
+C ..> IV
+IV - - V
+V ..> IS
+IS - -> S
+V - -> IDWS
+IDWS - - DWS
+AppClient - -> IDWS
+
+S - - ISC
+O .u.> ISC
+
+V ..> IOC
+IOC - - O
+@enduml
+
+PlantUML version 1.2022.10beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

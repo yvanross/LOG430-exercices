@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="110px" preserveAspectRatio="none" style="width:527px;height:110px;background:#FFFFFF;" version="1.1" viewBox="0 0 527 110" width="527px" zoomAndPan="magnify"><defs/><g><!--MD5=[deca37ca3a1945128db01175b558b3bf]
+cluster SystèmeSommation--><g id="cluster_SystèmeSommation"><path d="M85.5,6 L248.5,6 A3.75,3.75 0 0 1 251,8.5 L258,28.2969 L425.5,28.2969 A2.5,2.5 0 0 1 428,30.7969 L428,100.5 A2.5,2.5 0 0 1 425.5,103 L85.5,103 A2.5,2.5 0 0 1 83,100.5 L83,8.5 A2.5,2.5 0 0 1 85.5,6 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="83" x2="258" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="162" x="87" y="20.9951">SystèmeSommation</text></g><!--MD5=[d8322213e5f4465576b8bf70cd9bce59]
+entity s--><g id="elem_s"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="124" x="99" y="41"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="203" y="46"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="201" y="48"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="201" y="52"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="114" y="73.9951">Sommateur</text></g><!--MD5=[1a416c3156d55d9446032ebbee093b81]
+entity DS--><g id="elem_DS"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="154" x="258" y="41"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="392" y="46"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="390" y="48"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="390" y="52"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="273" y="73.9951">DataWebServer</text></g><!--MD5=[40046ef14a1cf630dc5fb444525ef4ac]
+entity AppClient--><g id="elem_AppClient"><ellipse cx="484" cy="34.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M484,42.5 L484,69.5 M471,50.5 L497,50.5 M484,69.5 L471,84.5 M484,69.5 L497,84.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="447.5" y="98.9951">AppClient</text></g><!--MD5=[8e9b2d9d80e066cced8e5d90e9bdea61]
+entity c--><g id="elem_c"><ellipse cx="35" cy="34.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M35,42.5 L35,69.5 M22,50.5 L48,50.5 M35,69.5 L22,84.5 M35,69.5 L48,84.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="6" y="98.9951">Capteur</text></g><!--MD5=[8168195bc68f8a3aae397a7d5a82b5ba]
+link c to s--><g id="link_c_s"><path d="M64.0391,64 C73.9301,64 83.8211,64 93.712,64 " fill="none" id="c-to-s" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="98.8844,64,89.8844,60,93.8844,64,89.8844,68,98.8844,64" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="71.9705" y="59.2188">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="82.8266" y="60.1428">1</text></g><!--MD5=[14430229b8513223a8b5198a813bb03b]
+link s to DS--><g id="link_s_DS"><path d="M223.191,64 C232.985,64 242.779,64 252.573,64 " fill="none" id="s-to-DS" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="257.695,64,248.695,60,252.695,64,248.695,68,257.695,64" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="230.8443" y="60.1902">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="241.9456" y="60.3442">1</text></g><!--MD5=[4b37aa5d680041328972f14c200d3bf3]
+link AppClient to DS--><g id="link_AppClient_DS"><path d="M447.498,64 C437.456,64 427.413,64 417.371,64 " fill="none" id="AppClient-to-DS" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="412.119,64,421.119,68,417.119,64,421.119,60,412.119,64" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="432.6226" y="59.5742">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="420.1042" y="60.3205">1</text></g><!--MD5=[3a8ae5a7bb293225470545a156ca9d27]
+@startuml
+Actor AppClient
+actor Capteur  as c
+package SystèmeSommation {
+[Sommateur] as s
+[DataWebServer] as DS
+}
+c "*" -> "1" s
+s "1" -> "1" DS
+AppClient "*" .> "1" DS
+@enduml
+
+PlantUML version 1.2022.10beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

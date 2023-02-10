@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_sVQEgDoyEemb_8ZbXBdsWA" name="RootElement" metaclassReference="_aiDTMDozEemb_8ZbXBdsWA">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UfTRIDo0Eemb_8ZbXBdsWA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_UfT4MDo0Eemb_8ZbXBdsWA" name="RootElement" nsURI="http:///schemas/RootElement/_UfRb8Do0Eemb_8ZbXBdsWA/0" nsPrefix="RootElement">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UfVtYjo0Eemb_8ZbXBdsWA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UfVtYzo0Eemb_8ZbXBdsWA" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UfVtZDo0Eemb_8ZbXBdsWA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UfVtZTo0Eemb_8ZbXBdsWA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UfVtZjo0Eemb_8ZbXBdsWA" key="Date" value="2019-02-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UfVtZzo0Eemb_8ZbXBdsWA" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_UfT4MTo0Eemb_8ZbXBdsWA" name="EthernetLAN">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UfT4Mjo0Eemb_8ZbXBdsWA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8QgAQDoyEemb_8ZbXBdsWA">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UfT4Mzo0Eemb_8ZbXBdsWA" key="originalName" value="Ethernet/LAN"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_UfT4NDo0Eemb_8ZbXBdsWA" name="base_CommunicationPath" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//CommunicationPath"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_UfT4Njo0Eemb_8ZbXBdsWA" name="DDSEthernet">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UfT4Nzo0Eemb_8ZbXBdsWA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wqLA4DozEemb_8ZbXBdsWA">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UfT4ODo0Eemb_8ZbXBdsWA" key="originalName" value="DDS/Ethernet"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_UfT4OTo0Eemb_8ZbXBdsWA" name="base_CommunicationPath" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//CommunicationPath"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_UfT4Ozo0Eemb_8ZbXBdsWA" name="JavaRMILAN">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UfT4PDo0Eemb_8ZbXBdsWA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_5DXgcDozEemb_8ZbXBdsWA">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UfT4PTo0Eemb_8ZbXBdsWA" key="originalName" value="Java RMI/LAN"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_UfT4Pjo0Eemb_8ZbXBdsWA" name="base_CommunicationPath" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//CommunicationPath"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_aiDTMDozEemb_8ZbXBdsWA" alias="CommunicationPath">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#CommunicationPath"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_8QgAQDoyEemb_8ZbXBdsWA" name="Ethernet/LAN">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_q2smYDozEemb_8ZbXBdsWA" name="base_CommunicationPath" association="_q2qxMDozEemb_8ZbXBdsWA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#CommunicationPath"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_q2qxMDozEemb_8ZbXBdsWA" name="E_Ethernet/LAN_CommunicationPath1" memberEnd="_q2r_UDozEemb_8ZbXBdsWA _q2smYDozEemb_8ZbXBdsWA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_q2r_UDozEemb_8ZbXBdsWA" name="extension_Ethernet/LAN" type="_8QgAQDoyEemb_8ZbXBdsWA" aggregation="composite" association="_q2qxMDozEemb_8ZbXBdsWA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_wqLA4DozEemb_8ZbXBdsWA" name="DDS/Ethernet">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zoPUgTozEemb_8ZbXBdsWA" name="base_CommunicationPath" association="_zoOtcDozEemb_8ZbXBdsWA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#CommunicationPath"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_zoOtcDozEemb_8ZbXBdsWA" name="E_DDS/Ethernet_CommunicationPath1" memberEnd="_zoPUgDozEemb_8ZbXBdsWA _zoPUgTozEemb_8ZbXBdsWA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_zoPUgDozEemb_8ZbXBdsWA" name="extension_DDS/Ethernet" type="_wqLA4DozEemb_8ZbXBdsWA" aggregation="composite" association="_zoOtcDozEemb_8ZbXBdsWA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_5DXgcDozEemb_8ZbXBdsWA" name="Java RMI/LAN">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8w3F4TozEemb_8ZbXBdsWA" name="base_CommunicationPath" association="_8w2e0DozEemb_8ZbXBdsWA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#CommunicationPath"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_8w2e0DozEemb_8ZbXBdsWA" name="E_Java RMI/LAN_CommunicationPath1" memberEnd="_8w3F4DozEemb_8ZbXBdsWA _8w3F4TozEemb_8ZbXBdsWA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_8w3F4DozEemb_8ZbXBdsWA" name="extension_Java RMI/LAN" type="_5DXgcDozEemb_8ZbXBdsWA" aggregation="composite" association="_8w2e0DozEemb_8ZbXBdsWA"/>
+  </packagedElement>
+</uml:Profile>

@@ -1,0 +1,174 @@
+@startuml seance13-aeroport-solution
+left to right direction
+title système automatisé de controle des bagages 
+package Aeroport {
+  
+    package InterfaceUsager {
+      component InterfaceWeb <<UI>>
+      component InterfaceMobile<<UI, Iphone>>
+    }
+    
+    Actor Douanier <<Personne>>
+    Actor PersonnelAeroport <<Personne>>
+    Actor Passager<<Personne>>
+    Actor PersonnelLigneAerienne <<Personne>>
+    
+    Component SystemeControleChariotAutomatique <<Systeme logiciel>>
+    component ServeurLigneAerienne <<System logiciel>>
+    component Terminal <<Systeme logiciel>> {
+    Component ControleurConvoyeur <<Systeme>>
+  }
+  component ChariotTeleguide <<Systeme>>
+
+  component Avion <<Systeme>>
+  
+  Douanier --> SystemeControleChariotAutomatique : positionBagage(bagage:string)
+  PersonnelAeroport --> SystemeControleChariotAutomatique: position\net poids bagage
+  Douanier --> ControleurConvoyeur : positionBagage(bagage:string)
+  PersonnelAeroport --> ControleurConvoyeur: position\net poids bagage
+
+
+  Passager -->  InterfaceUsager: positionsBagage
+  PersonnelLigneAerienne -->  InterfaceUsager: position\net poids bagage
+  InterfaceUsager --> ServeurLigneAerienne: position bagage
+
+  ServeurLigneAerienne --> "*" Terminal: utilisent
+  ServeurLigneAerienne --> "*" Avion: gère 
+  
+  ChariotTeleguide --> Terminal: Apporte ou récupère les bagage 
+  ChariotTeleguide --> Avion: Apporte ou récupère les bagage 
+  SystemeControleChariotAutomatique --> "1000" ChariotTeleguide : Fait le suivie
+  
+
+@enduml
+' ************************************************************************************
+@startuml terminaux
+Title Contexte terminaux
+component ServeurLigneAerienne
+ component Terminal1 <<Systeme logiciel>>
+  component Terminal2 <<Systeme logiciel>>
+  component Terminal3 <<Systeme logiciel>>
+  component Terminal4 <<Systeme logiciel>>
+  component Terminal5 <<Systeme logiciel>>
+
+ServeurLigneAerienne --> Terminal1
+ServeurLigneAerienne --> Terminal2
+ServeurLigneAerienne --> Terminal3
+ServeurLigneAerienne --> Terminal4
+ServeurLigneAerienne --> Terminal5
+@enduml
+  
+  
+@enduml
+
+' ********************************************************************************
+@startuml MDD
+left to right direction
+title MDD
+
+
+package SystemeGestionCharioAutomatiques {
+  class PersonnelAeroport <<Personne>>
+
+class ControleurChariot <<XXX>>
+class CapteursPresence
+class Convoyeur
+class Caroussel
+class ChariotTeleguide
+class ControleurConvoyeur <<XXX>>
+class LecteurCodeBar
+}
+
+package SystemeGestionBagage {
+  class PersonnelLigneAerienne <<Personne>>
+
+  class LigneAerienne
+  class Passager <<Personne>>
+  class Vol
+  class PassagerVol{
+    passagerABors: boolean
+    bagagesABors: boolean
+  }
+class Avion {
+  volumeTotal:float
+}
+  class Bagage {
+    codeBar: string
+    poids: float
+    volume: float
+    scan():string
+    enregistrement()
+  }
+
+  class EtatPosition
+  class DansAvion
+  class SurChariotTeleguide
+  class SurConvoyeur
+  class SurCaroussel
+
+
+}
+
+package SystemeGestionAeroport {
+  class Porte
+  class Aeroport
+  class Terminal
+}
+
+package SystemeGestionDouane{
+    class Douanier <<Personne>>
+
+class Inspection
+
+}
+
+Aeroport -- "*" Terminal : gère *
+Vol -- Porte: Effectue embarquement et debarquement a la >
+Terminal -- "*" Porte: possède >
+
+LigneAerienne -- "*" Porte: utilise >
+
+
+Vol -- "*" PassagerVol: est pour >
+PassagerVol -- Passager: est pour >
+Vol -- "1" Avion: est fait avec >
+
+LigneAerienne -- "1..5" Terminal: utilisent 
+Terminal -- "*" Convoyeur: contient
+Terminal -- "*" Caroussel: contient
+
+Passager -- "*" Bagage: possède
+ ControleurChariot o-- ChariotTeleguide : controle >
+ ControleurConvoyeur o-- "*" Convoyeur : controle > 
+ ControleurConvoyeur o-- "*" CapteursPresence: vérifie l'état des convoyeurs avec >
+ ControleurConvoyeur o-- "*" LecteurCodeBar: vérifie la position des bagages avec >
+
+
+DansAvion -u-|> EtatPosition
+SurChariotTeleguide -u-|> EtatPosition
+SurConvoyeur -u-|> EtatPosition
+SurCaroussel -u-|> EtatPosition
+
+Bagage -r- EtatPosition: est localisé >
+
+
+ChariotTeleguide --> Terminal:Apporte ou récupère les bagage > 
+ChariotTeleguide --> Avion: Apporte ou récupère les bagage >
+
+DansAvion -- Avion : est dans >
+SurChariotTeleguide -- ChariotTeleguide: est sur >
+SurConvoyeur -- Convoyeur: localise les bagage sur >
+SurCaroussel -- Caroussel: localise les bagage sur >
+
+LigneAerienne -- "*" Avion : possède >
+LigneAerienne -- "*" PersonnelLigneAerienne : emploie >
+
+Douanier -- "*" Inspection: effectue >
+Inspection -- "*" Bagage: est pour >
+
+PersonnelAeroport -- ControleurChariot: localise les bagages >
+PersonnelAeroport -- ControleurConvoyeur: localise les bagages >
+
+LigneAerienne -- "*" Vol : offre >
+PersonnelLigneAerienne -- "*" Vol : gere les >
+@enduml

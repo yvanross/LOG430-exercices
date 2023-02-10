@@ -1,0 +1,231 @@
+@startuml déploiement
+title Vue de contexte
+cloud BureauScrutin{
+  package Kiosque {
+    node MachineAVoter <<Tablette numérique>> as MAV
+    node Imprimante
+  }
+  Actor Adminstrateur as AL
+  Node ServeurLocal <<Serveur>> as SL
+  Actor PreposeAuTable as P
+  Actor Electeur as E
+
+}
+
+Node ServeurCentrale <<Serveur>> as SC
+Actor Secretaire as S
+Actor OrganismeDePresse as OP
+Actor Administrateur as AC
+cloud BureauDirecteurElection{
+  node AfficheurResultatElection as ARE 
+}
+ARE "1" -- "1" SC: notifié  par > 
+AL -r- SL: configure >
+MAV -l- Imprimante: USB >
+E -- MAV: vote >
+MAV "*" --  SL: enregistre le vote >
+S  -l- SC: gère organismes presse \n <
+OP -u-  SC: s'enregistre >
+SL "*" -- SC: Compile les votes >
+P -l- SL: confirme code electeur \n <
+AC -r- SC: configure reseau >
+
+@enduml
+
+
+@startuml API's
+title Vue de contexte
+title Vue de contexte
+cloud BureauScrutin{
+  package Kiosque {
+    node MachineAVoter <<Tablette numérique>> as MAV
+    node Imprimante
+    
+  }
+  interface "IAdmin" as IAdmin
+  interface "IVote" as IV
+  interface "IEnregistrementVote" as IEV
+  Actor Adminstrateur as AL
+  Node ServeurLocal <<Serveur>> as SL
+  Actor PreposeAuTable as P
+  Actor Electeur as E
+  interface "IConfirmeElecteur" as ICE
+
+
+}
+
+interface "IAdminCentral" as IAdminC
+interface "IManageOrganismePress" as IMOP 
+interface "IResultatVotes" as IROP
+Node ServeurCentrale <<Serveur>> as SC
+Actor Secretaire as S
+Actor OrganismeDePresse as OP
+Actor Administrateur as AC
+cloud BureauDirecteurElection{
+  node AfficheurResultatElection as ARE 
+}
+
+interface "IAfficheur" as IARE
+ARE "1" --> "1" IARE
+IARE -- SC: notifié  par > 
+
+AL -r-> IAdmin
+IAdmin -r- SL: configure >
+
+MAV -l- Imprimante: USB >
+E --> IV 
+IV -- MAV: vote >
+
+MAV "*" --> IEV 
+IEV --  SL: enregistre le vote >
+
+S  --> IMOP 
+IMOP --  SC: gère organismes presse \n <
+
+OP -u-> IROP 
+IROP -u- SC: s'enregistre >
+
+SL "*" -- SC: Compile les votes >
+P --> ICE 
+ICE -- SL: confirme code electeur \n <
+
+AC --> IAdminC 
+IAdminC -- SC: configure reseau >
+
+@enduml
+
+
+@startuml classe
+
+package MachineAVoter as MAV {
+  class controleurVote
+}
+package ServeurLocal as SL{
+  class Vote 
+  ServeurLocal::Candidat "1" -- "*" Vote: recoit
+  class ServeurLocal::Electeur {
+    code:unsigned long
+    confirmationVote: DateTime
+  }
+  class PreposeTable
+}
+
+package ServeurCentrale as SC {
+
+  class OrganismePress {
+  nom:String 
+  token: String
+  url: String
+  tokenOrganisme: String
+}
+
+class Election
+
+
+class Candidat {
+  id: unsigned long
+  nom:String
+}
+
+class Circonscription {
+  nom:String
+}
+
+class PartiePolitique {
+  nom:String
+}
+Candidat -- Circonscription: représente 
+Candidat -- PartiePolitique: travaille pour 
+
+class ElecteurVote{
+  confirmationVote:dateTime
+}
+
+class Electeur{
+  prenon:String
+  nom:String
+  no:String
+}
+class CandidatVotes {
+  nombre:unsigned long
+}
+class Administrateur
+class AfficherresultatElection
+class Usager {
+  username: String?
+  password: String?
+}
+
+Electeur "1" -- "*" ElecteurVote: vote 
+ElecteurVote "*" -- "1" Election: est pour une élection
+Candidat "1" -- "*" CandidatVotes: recoit des 
+CandidatVotes -- "1" Election : est pour 
+
+
+
+
+class Secretaire
+Secretaire -- OrganismePress: donne accès à >
+
+Secretaire -u-|> Usager
+Electeur -u-|> Usager
+Administrateur -u-|> Usager
+
+}
+
+@enduml
+
+
+@startuml  DSS-GestionOrganismePresse
+  title Une secretaire ajoute un organisme de presse
+  skinparam style strictuml
+  participant Secretaire as S
+  participant ServeurCentrale as SC
+  S->SC: [nom] = getOrganismesDePresse()
+  S -> SC: [url:string, token:string] = addOrganisme(tokenSecretaire:String, nom:string)
+  S -> SC: removeOrganisme(tokenSecretaire:String, nom:string)
+
+@enduml
+
+
+@startuml DSS-OrganismePresse
+  title Un organisme de presse récupére les résultats de vote
+  skinparam style strictuml
+  participant OrganismePresse as OP
+  participant ServeurCentrale as SC
+  OP -> SC: tokenOrganisme:string = login(nom:string, token:string)
+
+  note right of OP: si le mode est synchrone
+  OP -> SC: json:string = getResultatsVote(tokenOrganisme:string)
+
+  note right of OP: si le mode est asynchrone
+  OP -> SC: json:string = registerCallbackServer(url:string,token:string)
+  OP <<-- SC: updateResultatsVote() 
+
+@enduml
+
+
+@startuml DSS-Vote
+  title Un voteur realise un vote
+  skinparam style strictuml
+  participant MachineAVoter as MAV
+  participant ServeurLocal as SL
+  participant ServeurCentrale as SC
+
+  participant ":List<>" as LV
+  note right of MAV: la liste des candidats est conservé en mémoire cache dans la Machine à voter
+  MAV --> SL: candidats:JSON = getCandidats()
+  MAV --> SL: v:Vote =  vote(candidat:unsigned long)
+  SL --> Vote**:create(candidat:unsigned long)
+  SL  --> LV: add(v:Vote)
+  
+  note right of SL: à chaque 15 minutes
+  SL -> SL: votes:JSON = compilerVotes()
+  
+  activate SL
+  SL -> SC: ajouterVotes(votes:JSON)
+  deactivate SL
+
+
+@enduml
+

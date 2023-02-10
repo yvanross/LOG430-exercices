@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="899px" preserveAspectRatio="none" style="width:603px;height:899px;background:#FFFFFF;" version="1.1" viewBox="0 0 603 899" width="603px" zoomAndPan="magnify"><defs/><g><!--MD5=[38e00907e261c19e1836b75b99c6e998]
+cluster MVCapteur1--><g id="cluster_MVCapteur1"><polygon fill="none" points="281.5,16,291.5,6,456.5,6,456.5,114,446.5,124,281.5,124,281.5,16" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="446.5" x2="456.5" y1="16" y2="6"/><line style="stroke:#181818;stroke-width:1.0;" x1="281.5" x2="446.5" y1="16" y2="16"/><line style="stroke:#181818;stroke-width:1.0;" x1="446.5" x2="446.5" y1="16" y2="124"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="80" x="325" y="31.9951">«ESP8266»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="99" x="315.5" y="48.292">MVCapteur1</text></g><!--MD5=[a4a759b1e35c7daaf6485841090a52ad]
+cluster vm1--><g id="cluster_vm1"><polygon fill="none" points="95.5,158,105.5,148,458.5,148,458.5,612,448.5,622,95.5,622,95.5,158" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="448.5" x2="458.5" y1="158" y2="148"/><line style="stroke:#181818;stroke-width:1.0;" x1="95.5" x2="448.5" y1="158" y2="158"/><line style="stroke:#181818;stroke-width:1.0;" x1="448.5" x2="448.5" y1="158" y2="622"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="34" x="256" y="173.9951">vm1</text></g><!--MD5=[c15471f36c92251f7f51856d416e31ac]
+cluster Sommateur--><g id="cluster_Sommateur"><polygon fill="none" points="282.5,656,292.5,646,586.5,646,586.5,872,576.5,882,282.5,882,282.5,656" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="576.5" x2="586.5" y1="656" y2="646"/><line style="stroke:#181818;stroke-width:1.0;" x1="282.5" x2="576.5" y1="656" y2="656"/><line style="stroke:#181818;stroke-width:1.0;" x1="576.5" x2="576.5" y1="656" y2="882"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="228" x="316.5" y="671.9951">«redondance active 3 instance»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="383.5" y="688.292">Sommateur</text></g><!--MD5=[16fab723be418f7eaf2ea4bd895a8e51]
+entity C--><g id="elem_C"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111" x="313" y="62"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="404" y="67"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="402" y="69"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="402" y="73"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="328" y="94.9951">Capteur 1</text></g><!--MD5=[36e7cd95dd69b8fc9c44ee72248e17a6]
+entity O--><g id="elem_O"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="301" y="560"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="422" y="565"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="420" y="567"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="420" y="571"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="316" y="592.9951">Orchestrateur</text></g><!--MD5=[8b7ff00887dec072f718dbb0b878e3a4]
+entity IOC--><g id="elem_IOC"><ellipse cx="368.5" cy="471" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="302.5" y="500.9951">IOrchestrateurCtrl</text></g><!--MD5=[9c35c66068622dad62ecac52c54c307b]
+entity V--><g id="elem_V"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="75" x="331" y="321"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="386" y="326"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="384" y="328"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="384" y="332"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="346" y="353.9951">Vote</text></g><!--MD5=[c2ca0dec4dd704caadc4eca7f9891f92]
+entity IV--><g id="elem_IV"><ellipse cx="368.5" cy="217" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="324.5" y="246.9951">ISommateur</text></g><!--MD5=[0129022b4f4fff0a0708d54da28a13f3]
+entity IDWS--><g id="elem_IDWS"><ellipse cx="188.5" cy="471" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="129.5" y="500.9951">IDataWebServer</text></g><!--MD5=[4af459200d26843669e7d9898b0dca8a]
+entity DWS--><g id="elem_DWS"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="154" x="111.5" y="560"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="245.5" y="565"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="243.5" y="567"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="243.5" y="571"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="126.5" y="592.9951">DataWebServer</text></g><!--MD5=[e91d325b6c6799f45ce2945c46a99c1c]
+entity IS--><g id="elem_IS"><ellipse cx="516.5" cy="731" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="472.5" y="760.9951">ISommateur</text></g><!--MD5=[8ad42e69c823d91e931492f14bc2a1bb]
+entity S--><g id="elem_S"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="124" x="373.5" y="820"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="477.5" y="825"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="475.5" y="827"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="475.5" y="831"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="388.5" y="852.9951">Sommateur</text></g><!--MD5=[05f5779cd7898a6a452c38abd2363a64]
+entity ISC--><g id="elem_ISC"><ellipse cx="364.5" cy="731" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="307" y="760.9951">ISommateurCtrl</text></g><!--MD5=[40046ef14a1cf630dc5fb444525ef4ac]
+entity AppClient--><g id="elem_AppClient"><ellipse cx="42.5" cy="314.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M42.5,322.5 L42.5,349.5 M29.5,330.5 L55.5,330.5 M42.5,349.5 L29.5,364.5 M42.5,349.5 L55.5,364.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="6" y="378.9951">AppClient</text></g><!--MD5=[e0e1c8beed7dc29055be599babb45027]
+link C to IV--><g id="link_C_IV"><path d="M368.5,108.053 C368.5,135.166 368.5,180.324 368.5,202.656 " fill="none" id="C-to-IV" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="368.5,207.817,372.5,198.817,368.5,202.817,364.5,198.817,368.5,207.817" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7f2e4632f0d3d5044cd16c133ae76614]
+link IV to V--><g id="link_IV_V"><path d="M368.5,226.202 C368.5,245.103 368.5,292.268 368.5,320.544 " fill="none" id="IV-V" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[1643ecab35bdeabefcf7d5bcf03b65d0]
+link V to IS--><g id="link_V_IS"><path d="M396.362,367.096 C417.041,385.053 444.204,412.216 459.5,442 C509.195,538.764 515.647,674.349 516.418,716.778 " fill="none" id="V-to-IS" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="516.491,721.917,520.362,712.8608,516.4196,716.9175,512.3628,712.9751,516.491,721.917" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2d7fce9a81b2f4af7350e7961f0b79c7]
+link IS to S--><g id="link_IS_S"><path d="M510.412,740.268 C498.123,756.956 469.989,795.164 451.911,819.7129 " fill="none" id="IS-S" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[42228eb3d8303db69ed110463698c459]
+link V to IDWS--><g id="link_V_IDWS"><path d="M336.734,367.06 C296.881,394.736 230.329,440.952 201.966,460.649 " fill="none" id="V-to-IDWS" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="197.752,463.575,207.4257,461.7258,201.8585,460.7226,202.8618,455.1554,197.752,463.575" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b02fed2a036f93cf0cfc46613b27d9ab]
+link IDWS to DWS--><g id="link_IDWS_DWS"><path d="M188.5,480.268 C188.5,496.956 188.5,535.164 188.5,559.713 " fill="none" id="IDWS-DWS" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6c097fd63671ef094ce3df6f8391ed61]
+link IOC to O--><g id="link_IOC_O"><path d="M368.725,480.268 C369.181,496.956 370.223,535.164 370.892,559.713 " fill="none" id="IOC-O" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f5635ebbca817c90d4f0e372829137e9]
+link O to ISC--><g id="link_O_ISC"><path d="M370.437,606.174 C368.965,636.878 366.351,691.395 365.144,716.571 " fill="none" id="O-to-ISC" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="364.895,721.757,369.3199,712.9581,365.1336,716.7627,361.329,712.5764,364.895,721.757" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[aaf5e1ceac93dbe20826d03db9b53a91]
+link ISC to S--><g id="link_ISC_S"><path d="M369.837,740.268 C380.608,756.956 405.269,795.164 421.115,819.7129 " fill="none" id="ISC-S" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[56e995f8810e77d588e967110fe387c5]
+link V to IOC--><g id="link_V_IOC"><path d="M368.5,367.06 C368.5,393.053 368.5,435.399 368.5,456.771 " fill="none" id="V-to-IOC" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="368.5,461.971,372.5,452.971,368.5,456.971,364.5,452.971,368.5,461.971" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[1cece09a8886608a9c6ffba476cb036a]
+link AppClient to IDWS--><g id="link_AppClient_IDWS"><path d="M79.342,376.543 C110.703,403.393 153.976,440.442 175.398,458.782 " fill="none" id="AppClient-to-IDWS" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="179.381,462.193,175.1448,453.3017,175.5825,458.9416,169.9426,459.3793,179.381,462.193" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[4030e4746ddc8c7ed79edb30a16c1459]
+@startuml
+Actor AppClient
+
+
+
+node MVCapteur1 <<ESP8266>> {
+[Capteur 1] as C
+}
+node vm1{
+[Orchestrateur] as O
+() "IOrchestrateurCtrl" as IOC
+[Vote] as V
+() ISommateur as IV
+() "IDataWebServer" as IDWS
+[DataWebServer] as DWS
+
+}
+
+
+' () ISommateur as ISOM
+
+node Sommateur<<redondance active 3 instance>>{
+  () "ISommateur" as IS
+  [Sommateur] as S
+  () "ISommateurCtrl" as ISC
+}
+
+C ..> IV
+IV - - V
+V ..> IS
+IS - - S
+
+V ..> IDWS
+IDWS - - DWS
+
+IOC - - O
+O ..> ISC 
+ISC - - S
+
+V ..> IOC
+
+AppClient - -> IDWS
+@enduml
+
+@startuml
+Actor AppClient
+
+
+
+node MVCapteur1 <<ESP8266>> {
+[Capteur 1] as C
+}
+node vm1{
+[Orchestrateur] as O
+() "IOrchestrateurCtrl" as IOC
+[Vote] as V
+() ISommateur as IV
+() "IDataWebServer" as IDWS
+[DataWebServer] as DWS
+
+}
+
+
+
+node Sommateur<<redondance active 3 instance>>{
+  () "ISommateur" as IS
+  [Sommateur] as S
+  () "ISommateurCtrl" as ISC
+}
+
+C ..> IV
+IV - - V
+V ..> IS
+IS - - S
+
+V ..> IDWS
+IDWS - - DWS
+
+IOC - - O
+O ..> ISC 
+ISC - - S
+
+V ..> IOC
+
+AppClient - -> IDWS
+@enduml
+
+PlantUML version 1.2022.10beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
