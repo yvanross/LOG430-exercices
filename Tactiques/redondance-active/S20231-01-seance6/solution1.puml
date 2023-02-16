@@ -1,0 +1,51 @@
+@startuml contexte
+
+hide footbox
+
+Title RDCU - Capteurs
+
+participant ":Client" as client
+participant ":Capteur" as c
+participant ":APISommateur" as apis
+participant "Map<id,sum>" as map
+participant "APIVote" as apiv
+participant "Map<id,List<float>>" as map2
+participant ":List<float>" as list
+participant ":APITemperature" as apit
+
+c -> apis : setTemp(idCapteur, temp)
+apis -> map : somme = get(id)
+apis -> apis : somme = calculerSomme(temp, somme)
+apis -> map : set(id, somme)
+apis -> apiv : add(id, somme)
+apiv -> map2 : list = get(id)
+apiv -> list : list.add(somme)
+client -> apit : list<float> = getTemperatures(idCapteur)
+apit -> map2 : get(idCapteur)
+
+@enduml
+
+
+@startuml processus crash incomplet
+
+hide footbox 
+
+Title RDCU - Capteurs processus crash
+
+participant ":duplicateur" as d
+participant "s4 :SommateurCummulatif" as sc
+participant ":APIVote" as apiv
+
+
+-> d : exceptionSommateurUnresponsive(idSommateur, s3)
+create sc
+d -> sc : create(apiVote: APIVote)
+
+d -> d : setSommateur(s3, s4)
+note left: on remplace sommateur 3 par sommateur 4
+
+sc -> apiv : subscribe(s3, this)
+note left: on indique au système de vote que sommateur 3 est devenu sommateur 4
+
+
+@enduml
